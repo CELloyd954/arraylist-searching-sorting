@@ -11,24 +11,21 @@ public class Search {
 		return found;
 	}
 
-	// public static int binarySearch(ArrayList<String> strList, String str) {
+	//public static int binarySearch(ArrayList<String> strList, String str) {
 	// 	compare first letter of strings to see which half it's on??
 
 	// }
 
 	public static void main(String[] args) {
 		ArrayList<String> strList = new ArrayList<String>();
-		for (int i = 0; i < 8; i++) {
-			strList.set(i, null);
-		}
-		strList.set(0, "orange");
-		strList.set(1, "apple");
-		strList.set(2, "apple");
-		strList.set(3, "acai");
-		strList.set(4, "banana");
-		strList.set(5, "watermelon");
-		strList.set(6, "blueberry");
-		strList.set(7, "strawberry");
+		strList.add("orange");
+		strList.add("apple");
+		strList.add("apple");
+		strList.add("acai");
+		strList.add("banana");
+		strList.add("watermelon");
+		strList.add("blueberry");
+		strList.add("strawberry");
 
 		System.out.println(Searching(strList, "acai"));
 	}
